@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const subject = document.getElementById('subject');
   const email = document.getElementById('email');
   const phone = document.getElementById('phone');
+  const description = document.getElementById('description');
   let packageName = '';
 
   if (test) {
@@ -50,6 +51,7 @@ document.addEventListener('DOMContentLoaded', function () {
         email.value = '';
         phone.value = '';
         subject.value = '';
+        description.value = '';
         packageName = '';
       }
     });
@@ -66,6 +68,7 @@ document.addEventListener('DOMContentLoaded', function () {
         subject: '',
         email: '',
         phone: '',
+        description: '',
       };
 
       if (name && name.value === '') {
@@ -92,6 +95,10 @@ document.addEventListener('DOMContentLoaded', function () {
         data.phone = phone.value;
       }
 
+      if (description && description.value !== '') {
+        data.description = description.value;
+      }
+
       if (error && formError) {
         formError.classList.remove('hidden');
         setTimeout(() => {
@@ -110,13 +117,14 @@ document.addEventListener('DOMContentLoaded', function () {
           from_email: data.email,
           from_phone: data.phone,
           from_subject: data.subject,
-          from_description: data.subject,
+          from_description: data.description,
         };
 
         name.value = '';
         email.value = '';
         phone.value = '';
         subject.value = '';
+        description.value = '';
 
         emailjs.send('service_2i39tk3', 'template_sft1fpl', sendData).then((res) => {
           const modal = document.getElementById('modal-container');
