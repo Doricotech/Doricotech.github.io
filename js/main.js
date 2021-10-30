@@ -34,7 +34,6 @@ document.addEventListener('DOMContentLoaded', function () {
       const minutes = Math.floor(diffInMilliSeconds / 60) % 60;
       diffInMilliSeconds -= minutes * 60;
 
-      console.log(minutes);
       if (days >= 1) {
         localStorage.removeItem('sgdrh-lang');
       }
@@ -95,7 +94,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       if (!data) {
         const local = await axios.get('https://geolocation-db.com/json/');
-        console.log(local);
+
         const country = local.data.country_name.toLowerCase();
         if (country === 'iran') {
           currentLang = 'ir';
