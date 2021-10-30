@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Dorico</title>
+  </head>
+  <body class="overflow-x-hidden">
+    <!-- header  -->
+    <header
+      id="header"
+      class="header fixed w-full pt-4 px-2 sm:px-8 z-50 flex justify-between justify-items-center"
+    >
+      <div class="logo cursor-pointer flex">
+        <div class="logo-icon">
+          <a href="#hero">
+            <img src="./img/logo.png" alt="" />
+          </a>
+        </div>
+        <!-- <div class="logo-text px-3">
+          <p class="text-lg">Launching Expectations.</p>
+        </div> -->
+      </div>
+
+      <div class="menu flex justify-between justify-items-center">
+        <!-- <div class="pb-8 px-1">
+          <a href="#footer">
+            <p id="about" class="cursor-pointer text-white leading-loose font-bold">About Us</p>
+          </a>
+        </div> -->
+        <!-- <div class="pb-8 px-2">
+          <p id="contact" class="cursor-pointer text-white leading-loose font-bold">Contact Us</p>
+        </div> -->
+
+        <div class="lang-menu text-right font-bold relative flex justify-end justify-items-center">
+          <div
+            id="lang"
+            class="selected-lang en text-white flex justify-between cursor-pointer leading-loose pb-8 px-4"
+          >
+            English
+          </div>
+          <ul class="m-0 p-0 bg-gray-400 absolute border-solid border-black w-32 rounded top-16 py-2 right-6">
+            <li class="list-none text-left hover:bg-primary-color py-1 px-2">
+              <a href="#" id="en" class="en">English</a>
+            </li>
+            <li class="list-none text-left hover:bg-primary-color py-1 px-2">
+              <a href="#" id="ir" class="ir">Farsi</a>
+            </li>
+            <li class="list-none text-left hover:bg-primary-color py-1 px-2">
+              <a href="#" id="tr" class="tr">Turkish</a>
+            </li>
+            <li class="list-none text-left hover:bg-primary-color py-1 px-2">
+              <a href="#" id="ar" class="ar">Arabic</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- end header -->
+    <!-- hero section -->
+    <section id="hero" class="hero relative">
+      <div class="video-container">
+        <video src="https://traversymedia.com/downloads/video.mov" autoplay muted loop></video>
+      </div>
+      <div class="flex justify-items-center justify-center flex-col w-full h-full pt-20">
+        <div
+          style="z-index: 2"
+          id="hero-content"
+          class="
+            hero-content
+            md:ml-20
+            ml-0
+            md:text-left
+            text-center
+            flex
+            justify-items-center justify-center
+            flex-col
+          "
+        >
+          <div class="slider-wrapper flex flex-col mx-auto justify-center justify-items-center">
+            <div class="console-container">
+              <span id="text" class="text-2xl sm:text-4xl lg:text-6xl text-white font-bold"></span>
+              <div class="console-underscore text-white" id="console">&#95;</div>
+            </div>
+            <div class="console-container">
+              <span id="text-2" class="text-xl sm:text-3xl lg:text-4xl text-white font-semibold"></span>
+              <div class="console-underscore text-white" id="console-2">&#95;</div>
+            </div>
+          </div>
+          <!-- <div class="content-btn-text mx-auto px-4 mt-40 text-center">
+            <h2 id="hero.title" class="text-xl lg:text-5xl text-white font-bold mb-3">
+              SocialLift is your one-stop-shop for outsourcing design & development services.
+            </h2>
+            <button
+              class="
+                transition
+                duration-500
+                ease-in-out
+                bg-red-600
+                border-red-600
+                mt-4
+                py-3
+                mx-auto
+                px-8
+                border
+                text-white
+                font-bold
+                rounded
+                transform
+                hover:bg-transparent hover:text-black hover:border-black
+              "
+              id="hero.btn"
+            >
+              Contact Us
+            </button>
+          </div> -->
+        </div>
+      </div>
+    </section>
+    <!-- end hero section -->
+    <!-- ex section -->
+    <section class="ex-section">
+      <div class="m-0 py-16 px-8 mx-auto flex flex-col container">
+        <div class="flex justify-center justify-items-center flex-col text-center">
+          <span id="ex.subtile" class="text-lg py-2 text-primary-color font-semibold"></span>
+          <h1 id="ex.title" class="text-3xl text-center py-2 mb-12 font-bold">
+            Industry-Experienced Developers, On Demand
+          </h1>
+        </div>
+      
+        <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 xl:grid-cols-3 gap-4">
+          <div
+            class="
+              flex flex-col
+              shadow
+              bg-gray-200
+              rounded-3xl
+              text-center
+              p-6
+              transition-all
+              ease-in-out
+              duration-500
+              transform
+              hover:scale-105
+            "
+          >
+            <div class="mb-2">
+              <img src="./img/ex-1.svg" alt="" class="my-0 mx-auto" />
+            </div>
+            <div class="py-2">
+              <h5 id="ex.item.1.title" class="font-semibold text-2xl">App Development</h5>
+            </div>
+            <div>
+              <p id="ex.item.1.text" >
+                Our team of software developers can build exceptional applications across a breadth of devices
+                including desktop, mobile and tablet. With the help of our industry expertise, we are able to
+                give the end user the best application experience across multiple channels.
+              </p>
+            </div>
+          </div>
+          <div
+            class="
+              flex flex-col
+              shadow
+              bg-gray-200
+              rounded-3xl
+              text-center
+              p-6
+              transition-all
+              ease-in-out
+              duration-500
+              transform
+              hover:scale-105
+            "
+          >
+            <div class="mb-2">
+              <img src="./img/ex-2.svg" alt="" class="my-0 mx-auto" />
+            </div>
+            <div class="py-2">
+              <h5 id="ex.item.2.title"  class="font-semibold text-2xl">On-Demand Developers</h5>
+            </div>
+            <div>
+              <p id="ex.item.2.text" >
+                We are proud to employ over 2,200 in-house developers with a variety of software development
+                experience in an array of industries. This enables us to be a one-stop shop, removing the
+                hassles of managing multiple vendors, logistics, and technological bottlenecks.
+              </p>
+            </div>
+          </div>
+          <div
+            class="
+              flex flex-col
+              shadow
+              bg-gray-200
+              rounded-3xl
+              text-center
+              p-6
+              transition-all
+              ease-in-out
+              duration-500
+              transform
+              hover:scale-105
+            "
+          >
+            <div class="mb-2">
+              <img src="./img/ex-3.svg" alt="" class="my-0 mx-auto" />
+            </div>
+            <div class="py-2">
+              <h5 id="ex.item.3.title"  class="font-semibold text-2xl">Product Support</h5>
+            </div>
+            <div>
+              <p id="ex.item.3.text" >
+                We partner with other industry leaders to deploy superior software solutions for our clients.
+                Our certified developers are capable of implementing new software, seamlessly integrating it
+                to your organization as well as providing support for any future upgrades.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="anime-grid">
+          <div class="animation-wrapper">
+            <div class="stagger-visualizer">
+              <div class="cursor color-red " ></div>
+              <div class="dots-wrapper "></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end ex section -->
+    <!-- packages section  -->
+    <section class="packages" style="background-color: #f8f9fa">
+      <div class="m-0 py-16 px-8 mx-auto flex flex-col container">
+        <div class="flex justify-center justify-items-center flex-col text-center">
+          <span id="packages.subtile" class="text-lg text-center py-2 text-primary-color font-semibold">Packages</span>
+          <h1 id="packages.title" class="text-3xl text-center py-2 mb-12 font-bold">Our Packages</h1>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-4">
+          <div
+            style="background-color: rgba(223, 182, 103, 1)"
+            class="
+            packages
+              relative
+              flex flex-col
+              bg-white
+              shadow-2xl
+              rounded-3xl
+              text-center
+              p-6
+              transition-all
+              ease-in-out
+              duration-300
+              transform
+              hover:-translate-y-2
+            "
+          >
+            <div class="ribbon">
+              <span class="rib-span"
+                >15%
+                <span class="block">off</span>
+              </span>
+            </div>
+
+            <div class="mb-4 text-box">
+              <h4 id="package.one.title" class="text-xl text-center font-bold card-text">Website and Web Applications</h4>
+            </div>
+            <div class="inline-block">
+              <img src="./img/b.png" alt="" class="my-0 mx-auto" />
+              <!-- <i
+                class="
+                  fas
+                  fa-laptop-code
+                  text-white text-center
+                  inline-block
+                  rounded-full
+                  bg-red-600
+                  text-5xl
+                  w-24
+                  h-24
+                "
+                style="line-height: 100px"
+              ></i> -->
+            </div>
+            <div class="my-5">
+              <p id="package.one.price" class="text-center  text-sm font-semibold">Starts from</p>
+              <p class="text-center text-4xl font-bold">$300</p>
+            </div>
+            <ul>
+              <li id="package.one.cat.1" class="mt-1 text-lg font-semibold">Performance Architecture</li>
+              <li id="package.one.cat.2" class="mt-1 text-lg font-semibold">Creative UI/UX Design</li>
+              <li id="package.one.cat.3" class="mt-1 text-lg font-semibold">Highly Scalable</li>
+              <li id="package.one.cat.4" class="mt-1 text-lg font-semibold">Psychology Driven</li>
+              <li id="package.one.cat.5" class="mt-1 text-lg font-semibold">Failproof</li>
+              <li id="package.one.cat.6" class="mt-1 text-lg font-semibold"">Automated QA and testing</li>
+              <li id="package.one.cat.7" class="mt-1 text-lg font-semibold">Fully responsive</li>
+              <li id="package.one.cat.8" class="mt-1 text-lg font-semibold">Maintenance and post-warranty support</li>
+            </ul>
+            <div class="mt-auto">
+              <button id="package.one.btn" class="bg-red-600 mt-4 hover:bg-red-700 text-white font-bold py-4 px-10 rounded-full">
+                Buy Now
+              </button>
+            </div>
+          </div>
+          <div
+            style="background-color: rgba(160, 160, 160, 1)"
+            class="
+            packages
+              relative
+              flex flex-col
+              bg-white
+              shadow-2xl
+              rounded-3xl
+              text-center
+              p-6
+              transition-all
+              ease-in-out
+              duration-300
+              transform
+              hover:-translate-y-2
+            "
+          >
+            <div class="ribbon">
+              <span class="rib-span"
+                >25%
+                <span class="block">off</span>
+              </span>
+            </div>
+            <div class="mb-4">
+              <h4 id="package.two.title" class="text-xl text-center font-bold">Mobile Applications</h4>
+            </div>
+            <div class="inline-block">
+              <img src="./img/s.png" alt="" class="my-0 mx-auto" />
+              <!-- <i
+                class="
+                  fas
+                  fa-mobile-alt
+                  text-white text-center
+                  inline-block
+                  rounded-full
+                  bg-red-600
+                  text-5xl
+                  w-24
+                  h-24
+                "
+                style="line-height: 100px"
+              ></i> -->
+            </div>
+            <div class="my-5">
+              <p id="package.two.price" class="text-center text-sm font-semibold">Starts from</p>
+              <p class="text-center text-4xl font-bold">$400</p>
+            </div>
+            <ul>
+              <li id="package.two.cat.1" class="mt-1 text-lg font-semibold">Custom iOS and Android apps development</li>
+              <li id="package.two.cat.2"  class="mt-1 text-lg font-semibold">Native and cross-platform solutions</li>
+              <li id="package.two.cat.3"  class="mt-1 text-lg font-semibold">Second platform app development</li>
+              <li id="package.two.cat.4"  class="mt-1 text-lg font-semibold">UI/UX design</li>
+              <li id="package.two.cat.5"  class="mt-1 text-lg font-semibold">Consulting and prototyping</li>
+              <li id="package.two.cat.6"  class="mt-1 text-lg font-semibold">Automated QA and testing</li>
+              <li id="package.two.cat.7"  class="mt-1 text-lg font-semibold">Power management, notification and geofencing</li>
+              <li id="package.two.cat.8"  class="mt-1 text-lg font-semibold">Embedded Android & AOSP customizations</li>
+              <li id="package.two.cat.9"  class="mt-1 text-lg font-semibold">Maintenance and post-warranty support</li>
+            </ul>
+            <div class="mt-auto">
+              <button id="package.two.btn" class="bg-red-600 mt-4 hover:bg-red-700 text-white font-bold py-4 px-10 rounded-full">
+                Buy Now
+              </button>
+            </div>
+          </div>
+          <div
+            style="background-color: rgba(242, 215, 50, 1)"
+            class="
+            packages
+              relative
+              flex flex-col
+              bg-white
+              shadow-2xl
+              rounded-3xl
+              text-center
+              p-6
+              transition-all
+              ease-in-out
+              duration-300
+              transform
+              hover:-translate-y-2
+            "
+          >
+            <div class="ribbon">
+              <span class="rib-span"
+                >45%
+                <span class="block">off</span>
+              </span>
+            </div>
+            <div class="mb-4">
+              <h4 id="package.three.title" class="text-xl text-center font-bold">Mobile app + Website</h4>
+            </div>
+            <div class="inline-block">
+              <img src="./img/p.png" alt="" class="my-0 mx-auto" />
+              <!-- <i
+                class="
+                  fal
+                  fa-phone-laptop
+                  text-white text-center
+                  inline-block
+                  rounded-full
+                  bg-red-600
+                  text-5xl
+                  w-24
+                  h-24
+                "
+                style="line-height: 100px"
+              ></i> -->
+            </div>
+            <div class="my-5">
+              <p id="package.three.price" class="text-center text-sm font-semibold">Starts from</p>
+              <p class="text-center text-4xl font-bold">$600</p>
+            </div>
+            <ul>
+              <li id="package.three.cat.1" class="mt-1 text-lg font-semibold">Website and Web Applications</li>
+              <li id="package.three.cat.2" class="mt-1 text-lg font-semibold">Mobile Applications</li>
+              <li id="package.three.cat.3" class="mt-1 text-lg font-semibold">7/24 live support</li>
+              <li id="package.three.cat.4" class="mt-1 text-lg font-semibold">1 month free Maintenance and post-warranty support</li>
+              <li id="package.three.cat.5" class="mt-1 text-lg font-semibold">highest priority among customers</li>
+              <!-- <li class="mt-2">-</li>
+              <li class="mt-2">-</li>
+              <li class="mt-2">-</li>
+              <li class="mt-2">-</li> -->
+            </ul>
+            <div class="mt-auto">
+              <button id="package.three.btn" class="bg-red-600 mt-4 hover:bg-red-700 text-white font-bold py-4 px-10 rounded-full">
+                Buy Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end packages section  -->
+    <!-- modal section -->
+    <div id="modal-container" style="z-index: 5000;background-color: rgba(0, 0, 0, 0.3);" class="modal-container flex justify-center items-center  fixed left-0 top-0 w-full h-full hidden ">
+    <!-- <div id="modal-container" class="modal-container     "> -->
+      <div class="modal  m-0 p-4 mx-auto rounded-2xl shadow-2xl max-w-xl flex  flex-col container" style="background-color: #c4c4c4">
+        
+        <div class="flex justify-between items-center">
+          <p></p>
+          <h1 class="text-3xl py-2 font-bold text-center">Your Info</h1>
+          <div id="close" class="bg-red-600 px-3 cursor-pointer  py-1 rounded-full">
+            <p class="text-white">x</p>
+          </div>
+
+        </div>
+        <div class="modal-form mt-5">
+
+          <div class="grid grid-cols-2 gap-4">
+            <input type="text" id="name" name="name" class="p-3 rounded-md" placeholder="Full Name" />
+            <input type="number" id="phone" name="phone" class="p-3 rounded-md" placeholder="Phone" />
+            <input type="email" id="email" name="email" class="p-3 rounded-md" placeholder="Email" />
+            <input type="text" id="subject" name="subject" class="p-3 rounded-md" placeholder="Subject" />
+            
+          </div>
+          <div class="w-full mt-4 ">
+            <textarea class="w-full p-2 rounded-md" name="description" id="description" placeholder="Description ( optional )" rows="5"></textarea>
+          </div>
+          <div class="w-full mt-2">
+            <p id="form-error" class="text-lg hidden font-medium text-red-500"></p>
+          </div>
+          <div class="w-full mt-8 flex justify-center items-center">
+            <button id="form-submit" class="bg-green-600   hover:bg-green-700 text-white font-bold py-4 px-16 rounded-full">Submit</button>
+          </div>
+       
+        </div>
+      </div>
+    </div>
+    <!-- end modal -->
+    <!-- work section -->
+    <section class="work bg-no-repeat bg-cover bg-center" style="background-image: url('./img/work-bg.jpg')">
+      <div class="m-0 py-16 px-8 mx-auto flex flex-col container">
+        <div class="flex justify-center justify-items-center flex-col text-center">
+          <span id="work.subtile" class="text-lg py-2 text-primary-color font-semibold"></span>
+          <h1 id="work.title" class="text-3xl py-2 mb-4 font-bold">Our Work Speaks for Itself</h1>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-4">
+          <div class="p-4 flex flex-col justify-end justify-items-center">
+            <div>
+              <img src="./img/work-1.gif" alt="" class="my-0 mx-auto" />
+            </div>
+            <div class="pt-3">
+              <a href="">
+                <p id="work.one.title" class="text-center text-blue-600 font-semibold py-1">Web-Based App Development</p>
+                <p id="work.one.subtitle" class="text-center py-1 font-semibold">Digital Asset Management</p>
+              </a>
+            </div>
+          </div>
+          <div class="p-4 flex flex-col justify-end justify-items-center">
+            <div>
+              <img src="./img/work-2.gif" alt="" class="my-0 mx-auto" />
+            </div>
+            <div class="pt-3">
+              <a href="">
+                <p id="work.two.title" class="text-center text-blue-600 font-semibold py-1">Mobile App Development</p>
+                <p id="work.two.subtitle" class="text-center py-1 font-semibold">Travel Booking App</p>
+              </a>
+            </div>
+          </div>
+          <div class="p-4 flex flex-col justify-end justify-items-center">
+            <div>
+              <img src="./img/work-3.gif" alt="" class="my-0 mx-auto" />
+            </div>
+            <div class="pt-3">
+              <a href="">
+                <p id="work.three.title" class="text-center text-blue-600 font-semibold py-1">Web-Based App Development</p>
+                <p id="work.three.subtitle" class="text-center py-1 font-semibold">MLS & RETS Integration</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end work section -->
+
+    <!-- footer box section -->
+    <footer id="footer" class="footer-box bg-black">
+      <div class="px-8 m-0 pt-12 lg:px-20 lg:pt-16">
+        <div class="divide-y divide-gray-500">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-24 pb-6">
+            <div class="contact text-white">
+              <h3 id="footer.contact" class="text-xl mt-0 mb-10 pb-1 font-bold">Contact Info</h3>
+              <ul class="list-disc list-inside">
+                <li class="py-1 list-c relative">
+                  <a
+                    id="footer.address"
+                    href=""
+                    class="font-semibold transition-colors duration-500 transform hover:text-primary-color"
+                    >Barbaros 06680 Çankaya/Ankara</a
+                  >
+                </li>
+                <li class="py-1 list-c relative">
+                  <a
+                    id="footer.phone"
+                    href=""
+                    class="font-semibold transition-colors duration-500 transform hover:text-primary-color"
+                    >+01 321 654 214</a
+                  >
+                </li>
+                <li class="py-1 list-c relative">
+                  <a
+                    id="footer.email"
+                    href="mailto:info@dorreh.com"
+                    class="font-semibold transition-colors duration-500 transform hover:text-primary-color"
+                    >info@dorreh.com</a
+                  >
+                </li>
+                <li class="py-1 list-c relative">
+                  <a
+                  target="_blank"
+                    id="footer.support"
+                    href="https://t.me/fast_support_users"
+                    class="font-semibold transition-colors duration-500 transform hover:text-primary-color"
+                    >Support</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="map">
+              <iframe
+              src="https://maps.google.com/maps?width=100%25&amp;height=300&amp;hl=en&amp;q=39.904180,%2032.863190+(Dorreh%20Company)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+              frameborder="0"
+              style="border: 0; width: 100%; height: 290px"
+              allowfullscreen
+            ></iframe>
+            </div>
+          </div>
+          <div class="footer-link py-6 px-4">
+            <p class="font-medium text-sm text-center text-white">
+              Copyright &copy;
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              <span id="footer.copy.right"> Dorico . All Rights Reserved </span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer box section -->
+    <!-- scripts -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/i18next/20.3.5/i18next.min.js"
+      integrity="sha512-+U/Qd2cGwIVAFGSA8D7zQ3CKzLiJ2eNkhZjrk1SFnFTBXZy9pTtp2QW+UbhBYiXX2ZNWkIfkTeSqIsmwJ183ag=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./js/anime.min.js"></script>
+    <script src="./js/anime.js"></script>
+    <script src="./js/main.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script type="text/javascript">
+(function() {
+emailjs.init("user_JTPQgqptti0UsAXMwTBWs");
+})();
+</script>  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js" integrity="sha512-u9akINsQsAkG9xjc1cnGF4zw5TFDwkxuc9vUp5dltDWYCSmyd0meygbvgXrlc/z7/o4a19Fb5V0OUE58J7dcyw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/form.js"></script>
+
+    <!-- end scripts -->
+  </body>
+</html>
