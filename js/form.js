@@ -119,7 +119,10 @@ document.addEventListener('DOMContentLoaded', function () {
         subject.value = '';
 
         emailjs.send('service_2i39tk3', 'template_sft1fpl', sendData).then((res) => {
-          console.log('send');
+          const modal = document.getElementById('modal-container');
+          if (modal) {
+            modal.classList.add('hidden');
+          }
         });
       }
     });

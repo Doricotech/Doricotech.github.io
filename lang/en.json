@@ -67,7 +67,7 @@
   "footer.copy.right": " Dorico . All Rights Reserved ",
   "name": "Full name",
   "email": "Email",
-  "phone": "Phone Number",
+  "phone": "Contact Us",
   "subject": "Subject",
   "description": "Description ( optional )",
   "form-error": "These field ( name , email , phone , subject ) can not be empty",
